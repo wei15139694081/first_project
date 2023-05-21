@@ -1,0 +1,74 @@
+.business-xq {
+  margin-top: 50px;
+  padding-top: 50px;
+  background: #fff;
+}
+.business-xq h3 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.business-xq .source {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #555;
+}
+.business-xq .zaiyao {
+  width: 1000px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+  margin: 20px auto;
+  background-color: #e3f8fa;
+}
+.business-xq .content {
+  margin: 40px auto;
+  width: 825px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8em;
+}
+.business-xq .content p {
+  text-indent: 2em;
+  line-height: 1.8em;
+}
+.business-xq .content .red {
+  font-weight: bold;
+  color: #df2828;
+}
+.business-xq .content .strong {
+  font-weight: bold;
+}
+.business-xq .content .pic {
+  padding: 10px 0;
+  width: 825px;
+}
+.business-xq .content .pic img {
+  width: 100%;
+  object-fit: cover;
+}
+.business-xq .content .f36 {
+  font-size: 36px;
+}
+.business-xq .content .str {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.business-xq .user {
+  font-weight: bold;
+  width: 825px;
+  margin: 0 auto;
+  font-size: 14px;
+  padding-bottom: 80px;
+  color: #555;
+  line-height: 1.8em;
+}
+.business-xq .user .red {
+  color: #df2828;
+}
+.business-xq .user p {
+  margin: 20px;
+}

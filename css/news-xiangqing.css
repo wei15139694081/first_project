@@ -1,0 +1,61 @@
+.main-body {
+  padding-top: 0;
+  padding-bottom: 200px;
+}
+.nav-title.nav-items {
+  width: 360px;
+}
+.news-xiangqing {
+  margin-top: 50px;
+  padding-top: 50px;
+  background: #fff;
+}
+.news-xiangqing h3 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.news-xiangqing .source {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #555;
+}
+.news-xiangqing .zaiyao {
+  width: 1000px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+  margin: 20px auto;
+  background-color: #e3f8fa;
+}
+.news-xiangqing .pic {
+  margin-top: 50px;
+  text-align: center;
+}
+.news-xiangqing .pic img {
+  width: 825px;
+  height: 460px;
+  margin-bottom: 10px;
+}
+.news-xiangqing .content {
+  margin: 40px auto;
+  width: 825px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8em;
+  text-indent: 2em;
+}
+.news-xiangqing .user {
+  width: 825px;
+  margin: 0 auto;
+  font-size: 14px;
+  padding-bottom: 80px;
+  color: #555;
+  line-height: 1.8em;
+}
+.news-xiangqing .user a {
+  color: #555;
+}

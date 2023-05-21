@@ -1,0 +1,95 @@
+.main-body{
+    padding-top: 0;
+    padding-bottom: 200px;
+}
+.safe{
+    background: url(../uploads/banner-items5.jpg) no-repeat center /cover;
+}
+// 通用列表主题
+.list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 0 10px 20px;
+
+        li {
+            width: 1170px;
+            height: 212px;
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 5px;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                background-color: #f7f7f7;
+                padding: 15px;
+
+                // 图片
+                .pic {
+                    width: 240px;
+                    height: 155px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        transition: .3s;
+                    }
+                }
+
+                // 新闻
+                .news {
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: #7d7d7d;
+
+                    // 标题
+                    h3 {
+                        font-size: 16px;
+                        color: #4b4a48;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    // 时间
+                    .date {
+                        padding: 5px 0;
+                    }
+
+                    // 内容
+                    .content {
+                        width: 875px;
+                        line-height: 1.8em;
+                        border-top: 1px solid #ccc;
+                        padding-top: 15px;
+                        margin-top: 15px;
+                        word-break: break-all;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 0 5px #ccc;
+
+                a {
+                    .pic {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

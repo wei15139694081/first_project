@@ -1,0 +1,11 @@
+.business {
+  background: url(../uploads/banner-items6.jpg) no-repeat center / cover;
+}
+.business .business-nav {
+  width: 214px;
+}
+.no {
+  font-style: 14px;
+  text-align: center;
+  color: #777;
+}

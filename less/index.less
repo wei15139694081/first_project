@@ -1,0 +1,594 @@
+// swiper
+.swiper-bg {
+    margin-top: -45px;
+    position: relative;
+    .swiper-slide{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // 遮罩层
+    .mask {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: rgba(0, 0, 0, .5);
+        z-index: 2;
+
+        .swiper-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+
+            // 资讯
+            .news {
+                color: #fff;
+
+                span {
+                    font-size: 20px;
+                    margin-right: 5px;
+                    line-height: 60px;
+                }
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            // 箭头
+            .jiantou {
+                span {
+                    width: 20px;
+                    height: 20px;
+                    color: #999;
+                    font-size: 20px;
+                    margin-left: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    // 跳动图片
+    .ani {
+        position: absolute;
+        left: 50%;
+        top: 82%;
+        transform: translate(-50%, -50%);
+        width: 70px;
+        height: 30px;
+        animation: move .5s infinite alternate linear;
+        z-index: 2;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// banner
+.banner {
+    // 入口图片
+    .in {
+        height: 92px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// 通用列表标题
+.title-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    background-color: #fff;
+    padding: 0 20px;
+
+    // 列表标题
+    .tab-list {
+        display: flex;
+
+        li {
+            margin-right: 50px;
+
+            a {
+                color: #555;
+            }
+
+            .active {
+                position: relative;
+                font-size: 20px;
+                font-weight: bold;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 8px;
+                    background-color: #87cfdd;
+                    border-radius: 4px;
+                }
+            }
+
+            span {
+                position: relative;
+                z-index: 1;
+
+            }
+        }
+    }
+
+    // 更多
+    .more {
+        a{
+            color: #555;
+        }
+        .iconfont {
+            margin-left: 8px;
+        }
+    }
+}
+
+// 通用列表主题
+.list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 0 10px 20px;
+
+        li {
+            width: 585px;
+            height: 212px;
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 5px;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                background-color: #f7f7f7;
+                padding: 15px;
+
+                // 图片
+                .pic {
+                    width: 240px;
+                    height: 155px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        transition: .3s;
+                    }
+                }
+
+                // 新闻
+                .news {
+                    width: 285px;
+                    font-size: 14px;
+                    color: #7d7d7d;
+
+                    // 标题
+                    h3 {
+                        font-size: 16px;
+                        color: #4b4a48;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    // 时间
+                    .date {
+                        padding: 5px 0;
+                    }
+
+                    // 内容
+                    .content {
+
+                        line-height: 1.8em;
+                        border-top: 1px solid #ccc;
+                        padding-top: 15px;
+                        margin-top: 15px;
+                        word-break: break-all;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 0 5px #ccc;
+
+                a {
+                    .pic {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// video
+.video-list {
+    position: relative;
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+    .video {
+        width: 380px;
+        height: 250px;
+        background-color: #000;
+        transition: .5s;
+        box-shadow: 0 0 10px #000;
+        border-radius: 5px;
+
+        a {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            // 播放按钮
+            .paly {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70px;
+                height: 70px;
+                background: url(../images/play.png) center / cover;
+            }
+        }
+
+        &:nth-of-type(2) {
+            transform: scale(1.4);
+            z-index: 1;
+        }
+
+        &:hover {
+            transform: scale(1.4);
+            z-index: 2;
+        }
+
+    }
+
+    .more {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        padding-right: 20px;
+
+        a {
+            color: #000;
+
+            .iconfont {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+// 热门景点
+.hot {
+    position: relative;
+
+    .hot-title {
+        height: 160px;
+        text-align: center;
+        margin-top: 1px;
+        img {
+            width: 600px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .more {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+
+        a {
+            color: #000;
+
+            .iconfont {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .hot-list {
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                width: 386px;
+                height: 257px;
+
+                a {
+                    position: relative;
+                    display: block;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    // 遮罩层
+                    .mask {
+                        transition: .3s;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 50px;
+                        background: rgba(0, 0, 0, .5);
+                        overflow: hidden;
+                        // 内容
+                        .content {
+                            transition: .5s;
+                            position: absolute;
+                            left: 0;
+                            bottom: -80px;
+                            color: #fff;
+                            padding: 0 10px 15px;
+
+                            h4 {
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                            }
+
+                            p {
+                                word-break: break-all;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .mask {
+                            height: 100%;
+
+                            .content {
+                                bottom: 0;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 热门路线主题
+.road {
+    position: relative;
+    z-index: 1;
+
+    .road-list {
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                width: 386px;
+                height: 382px;
+                background-color: #fff;
+                a {
+                    display: block;
+                    padding: 15px;
+
+                    .pic {
+                        width: 356px;
+                        height: 267px;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: .5s;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        color: #000;
+                        margin-top: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin: 8px 0;
+                        color: #7D7D7D;
+                    }
+
+                }
+
+                &:hover {
+                    box-shadow: 0 0 5px #ccc;
+
+                    .pic {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+// 玩乐指南
+.playing-list {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+
+        li {
+            position: relative;
+            width: 232px;
+            height: 400px;
+            margin-right: 10px;
+            transition: .5s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            // 遮罩层
+            .mask {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 120px;
+                background: rgba(0, 0, 0, .6);
+                transition: .5s;
+                text-align: center;
+            }
+            // 遮罩层上面的字和小图片
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100px;
+                height: 100px;
+                text-align: center;
+
+                .pic {
+                    margin: 10px auto;
+                    width: 45px;
+                    height: 45px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                p {
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+
+            &:hover {
+                width: 632px;
+
+                .mask {
+                    transform: translateY(-50%);
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+// 友情链接
+.link {
+    padding-bottom: 300px;
+
+    .swiper-link {
+        a {
+            display: block;
+            width: 208px;
+            height: 50px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+// footer
+.footer {
+    height: 300px;
+    background-color: #353432;
+
+    .footer-list {
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        dl {
+            dt {
+                a {
+                    display: block;
+                    font-size: 18px;
+                    height: 50px;
+                    border-bottom: 1px solid #ccc;
+                    margin-bottom: 25px;
+                    color: #fff;
+                }
+            }
+
+            dd {
+                a {
+                    display: block;
+                    height: 24px;
+                    font-size: 14px;
+                    color: #aaaaaa;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// 移动动画
+@keyframes move {
+    to {
+        transform: translate(-50%, -50%) translateY(30px);
+        opacity: .3;
+    }
+}

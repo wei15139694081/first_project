@@ -1,0 +1,129 @@
+.main-body {
+  padding-bottom: 200px;
+}
+.zhinan-title.nav-items {
+  width: 386px;
+}
+.zhinan-items .aside-l {
+  margin-right: 0;
+}
+.zhinan-items .aside-r {
+  background-color: #fff;
+  width: 1030px;
+  padding: 20px 30px 50px;
+}
+.zhinan-items .aside-r .top {
+  display: flex;
+  height: 280px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.zhinan-items .aside-r .top .pic {
+  width: 376px;
+  height: 250px;
+  margin-right: 5px;
+}
+.zhinan-items .aside-r .top .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zhinan-items .aside-r .top .img-items ul li {
+  width: 89px;
+  height: 59px;
+  margin-bottom: 5px;
+}
+.zhinan-items .aside-r .top .img-items ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zhinan-items .aside-r .top .img-items ul .active {
+  border: 4px solid #71DCE7;
+}
+.zhinan-items .aside-r .top .img-content {
+  margin-left: 10px;
+}
+.zhinan-items .aside-r .top .img-content h4 {
+  font-size: 18px;
+}
+.zhinan-items .aside-r .top .img-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 2em;
+}
+.zhinan-items .aside-r .top .img-content p span {
+  font-size: 24px;
+  color: #CC4B18;
+}
+.zhinan-items .aside-r .top .img-content p i {
+  color: #CC4B18;
+}
+.zhinan-items .aside-r .top .img-content .btn {
+  position: relative;
+  margin-top: 25px;
+  width: 172px;
+  height: 49px;
+  background-color: #CC4B18;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 49px;
+  color: #fff;
+  font-size: 18px;
+}
+.zhinan-items .aside-r .top .img-content .btn .xcx-m {
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  padding: 12px;
+  width: 200px;
+  height: 237px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.zhinan-items .aside-r .top .img-content .btn .xcx-m .pic-items {
+  width: 174px;
+  height: 174px;
+}
+.zhinan-items .aside-r .top .img-content .btn .xcx-m .pic-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zhinan-items .aside-r .top .img-content .btn .xcx-m::after {
+  content: '\e6af';
+  font-family: iconfont;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #ccc;
+  transform: translateX(-50%);
+}
+.zhinan-items .aside-r .top .img-content .btn:hover .xcx-m {
+  display: block;
+}
+.zhinan-items .aside-r .bottom {
+  padding-top: 30px;
+}
+.zhinan-items .aside-r .bottom .bottom-items {
+  margin-bottom: 20px;
+}
+.zhinan-items .aside-r .bottom .bottom-items h4 {
+  color: #555;
+}
+.zhinan-items .aside-r .bottom .bottom-items p {
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #555;
+}
